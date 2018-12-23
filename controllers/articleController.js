@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const ArticleSchema = require('../models/Article')
+import mongoose from 'mongoose'
+import ArticleSchema from '../models/Article'
 
 const Article = mongoose.model('Article' , ArticleSchema )
 
@@ -17,17 +17,14 @@ const addArticle = (req , res) => {
 
 
 const updateArticle = (req , res) => {
-	res.send('hello')
+
 }
 
 const deleteArticle = (req , res) => {
 
 }
 
-const getArticles = (req , res) => {
-	res.json({
-		"methode" : "getArticle"
-	})
+const getArticle = (req , res) => {
 
 }
 
@@ -35,5 +32,5 @@ module.exports = {
 	addArticle,
 	updateArticle,
 	deleteArticle,
-	getArticles
+	getArticle
 }

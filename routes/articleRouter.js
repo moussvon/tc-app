@@ -1,14 +1,10 @@
-const express = require('express') ; 
+import express from 'express'
+import articleController from '../controllers/articleController'
+
 const articleRouter = express.Router() ; 
 
-
-const articleController = require('../controllers/articleController')
-
 articleRouter.post('/add', articleController.addArticle)
-articleRouter.get('/', (req, res, next) =>{
-    console.log('am here')
-    next()
-}, articleController.getArticles)
+articleRouter.get('/', articleController.getArticle)
 articleRouter.put('update', articleController.updateArticle)
 articleRouter.delete('/delete', articleController.deleteArticle)
 

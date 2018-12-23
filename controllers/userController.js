@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const UserSchema = require('../models/User')
+import mongoose from 'mongoose'
+import UserSchema from '../models/User'
 
 
 const User = mongoose.model('User' , UserSchema )
@@ -16,7 +16,7 @@ const deleteUser = (req , res) => {
 
 }
 
-const getUsers = (req , res) => {
+const getUser = (req , res) => {
 	
 }
 
@@ -24,5 +24,5 @@ module.exports = {
 	addUser,
 	updateUser,
 	deleteUser,
-	getUsers
+	getUser
 }

@@ -1,10 +1,10 @@
-const express = require('express') ; 
+import express from 'express'
+import userController from '../controllers/userController'
+
 const userRouter = express.Router() ; 
 
-const userController = require('../controllers/userController')
-
 userRouter.post('/add', userController.addUser)
-userRouter.get('/',userController.getUsers)
+userRouter.get('/',userController.getUser)
 userRouter.put('update',userController.updateUser)
 userRouter.delete('/delete',userController.deleteUser)
 

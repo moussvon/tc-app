@@ -1,22 +1,27 @@
-const mongoose = require('mongoose')
-
+import mongoose from 'mongoose'
 const Schema = mongoose.Schema
+
 const ArticleSchema = new Schema({
-    title: {
-        type: String,
+    user: {
+        type: UserSchema,
         required: 'title is required'
-    },
-    author: {
-        type: String,
-        required: 'author is required'
     },
     content: {
         type: String,
-        required: 'Content is required'
+        required: 'content is required'
     },
-    created_date:{
-    	type : Date, 
+    comment: {
+        type: [String]
+    },
+    photo:{
+    	type : String, 
     	default : Date.now
+    },
+    tags:{
+        type: [String]
+    },
+    reaction:{
+        type: [UserSchema]
     }
 })
 
