@@ -1,4 +1,8 @@
 import mongoose from 'mongoose'
+import TodoSchema from './Todo'
+import DefiSchema from './Todo'
+import ArticleSchema from './Article'
+
 
 const Schema = mongoose.Schema
 

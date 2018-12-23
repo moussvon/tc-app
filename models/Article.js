@@ -1,4 +1,6 @@
 import mongoose from 'mongoose'
+import UserSchema from './User'
+
 const Schema = mongoose.Schema
 
 const ArticleSchema = new Schema({

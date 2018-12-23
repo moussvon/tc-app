@@ -1,4 +1,8 @@
 import mongoose from 'mongoose'
+import UserSchema from './User'
+import ArticleSchema from './Article'
+import DefiSchema from './Defi'
+
 
 const Schema = mongoose.Schema
 

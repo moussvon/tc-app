@@ -24,4 +24,4 @@ const TacheSchema = new Schema({
     }
 })
 
-module.exports = TodoSchema
+module.exports = TacheSchema
