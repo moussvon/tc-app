@@ -144,7 +144,6 @@ const logout = (req, res, next) => {
 };
 
 module.exports = {
-    addUser,
     updateUser,
     deleteUser,
     getUser,
