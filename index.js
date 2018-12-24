@@ -56,6 +56,9 @@ app.use('/groupe',requiresLogin, groupeRouter);
 app.use('/tache',requiresLogin, tacheRouter);
 app.use('/todo',requiresLogin, todoRouter);
 app.use('/auth', authRouter);
+app.get('/', (req, res) =>{
+    res.send("Improve app is coming")
+})
 
 app.listen(80, () => {
     console.log('Server is listening on port 3000')
