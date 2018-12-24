@@ -12,7 +12,7 @@ import defiRouter from './routes/defiRouter'
 import groupeRouter from './routes/groupeRouter'
 import tacheRouter from './routes/tacheRouter'
 import todoRouter from './routes/todoRouter'
-import authRouter from './routes/authRouter'
+import authRouter from './routes/AuthRouter'
 
 
 //Global variables
