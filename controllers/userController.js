@@ -5,17 +5,6 @@ const bcrypt = require('bcryptjs')
 
 const User = mongoose.model('User', UserSchema)
 
-const addUser = (req, res) => {
-    const newUser = new User(req.body)
-    newUser.save((err, User) => {
-        if (err) {
-            res.send(err)
-        } else {
-            res.json(User)
-        }
-    })
-}
-
 const updateUser = (req, res) => {
     User.findOneAndUpdate(
         req.params.idUser,
