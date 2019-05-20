@@ -1,6 +1,6 @@
 # tc-app
 
-Backend Boiler plate for a web application to improve social life by allowing people to create group goals and work on them together
+Backend and frontend for a web application to improve social life by allowing people to create group goals and work on them together
 
 ### Prerequisites
 
