@@ -27,6 +27,6 @@
     "express-validator": "^5.3.1",
     "mongoose": "^5.4.0",
     "nodemon": "^1.18.9",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   }
 }
